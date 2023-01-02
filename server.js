@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 // app.use(cors()); // allows all origins
 
 if ((process.env.NODE_ENV = "development")) {
-  app.use(cors({ origin: "http://localhost:3000" }));
+  app.use(cors({ origin: "https://mern-auth-client-alpha.vercel.app" }));
 }
 //! Imports routes
 const authRoutes = require("./routes/authRoutes");
